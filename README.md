@@ -71,6 +71,16 @@ learnhub/
 
 ## 3. Running the project locally
 
+### Quick demo (no MongoDB install needed)
+```bash
+cd server
+npm install
+npm run demo
+```
+This starts a temporary in-memory MongoDB, seeds the demo data, builds the React client and serves everything on **http://localhost:5000**. Data is wiped when you stop it (Ctrl+C). Logins: `admin@learnhub.com / admin123`, `student@learnhub.com / student123`.
+
+For a normal setup with a persistent database, follow the steps below.
+
 ### Requirements
 - **Node.js 18+**
 - **MongoDB**: either installed locally ([MongoDB Community](https://www.mongodb.com/try/download/community)) or a free **MongoDB Atlas** cluster
