@@ -32,7 +32,7 @@ export default function Register() {
   return (
     <div className="auth-page">
       <div className="auth-side">
-        <img src="https://picsum.photos/seed/learnhub-register/600/800" alt="" />
+        <img src="/images/register.svg" alt="" />
         <div className="auth-side-text">
           <h2>Start learning today</h2>
           <p>Create a free account to enroll in courses and track your progress.</p>

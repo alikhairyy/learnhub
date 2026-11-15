@@ -19,7 +19,7 @@ export function toEmbedUrl(url = '') {
   }
 }
 
-export const fallbackImage = (seed = 'learnhub') => `https://picsum.photos/seed/${encodeURIComponent(seed)}/800/450`;
+export const fallbackImage = () => '/images/courses/default.svg';
 
 export const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
 

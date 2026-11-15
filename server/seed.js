@@ -12,7 +12,7 @@ const Enrollment = require('./models/Enrollment');
 
 const yt = (id, startSeconds = 0) =>
   `https://www.youtube.com/watch?v=${id}${startSeconds ? `&t=${startSeconds}` : ''}`;
-const img = (seed) => `https://picsum.photos/seed/${seed}/800/450`;
+const img = (name) => `/images/courses/${name}.svg`;
 
 const courses = [
   {
@@ -22,7 +22,7 @@ const courses = [
     category: 'Web Development',
     level: 'Beginner',
     instructor: 'freeCodeCamp',
-    imageUrl: img('learnhub-html'),
+    imageUrl: img('html'),
     lessons: [
       { title: 'Introduction & first page', videoUrl: yt('pQN-pnXPaVg'), duration: '15 min' },
       { title: 'Links and images', videoUrl: yt('pQN-pnXPaVg', 1500), duration: '20 min' },
@@ -36,7 +36,7 @@ const courses = [
     category: 'Programming',
     level: 'Beginner',
     instructor: 'freeCodeCamp',
-    imageUrl: img('learnhub-js'),
+    imageUrl: img('js'),
     lessons: [
       { title: 'Running JavaScript & variables', videoUrl: yt('PkZNo7MFNFg'), duration: '20 min' },
       { title: 'Functions and scope', videoUrl: yt('PkZNo7MFNFg', 2700), duration: '25 min' },
@@ -51,7 +51,7 @@ const courses = [
     category: 'Web Development',
     level: 'Intermediate',
     instructor: 'Bob Ziroll',
-    imageUrl: img('learnhub-react'),
+    imageUrl: img('react'),
     lessons: [
       { title: 'Why React?', videoUrl: yt('bMknfKXIFA8'), duration: '15 min' },
       { title: 'Components and JSX', videoUrl: yt('bMknfKXIFA8', 1800), duration: '30 min' },
@@ -66,7 +66,7 @@ const courses = [
     category: 'Web Development',
     level: 'Intermediate',
     instructor: 'Mosh Hamedani',
-    imageUrl: img('learnhub-node'),
+    imageUrl: img('node'),
     lessons: [
       { title: 'What is Node?', videoUrl: yt('TlB_eWDSMt4'), duration: '10 min' },
       { title: 'Modules', videoUrl: yt('TlB_eWDSMt4', 900), duration: '20 min' },
@@ -80,7 +80,7 @@ const courses = [
     category: 'Databases',
     level: 'Beginner',
     instructor: 'Web Dev Simplified',
-    imageUrl: img('learnhub-mongo'),
+    imageUrl: img('mongo'),
     lessons: [
       { title: 'What is MongoDB?', videoUrl: yt('ofme2o29ngU'), duration: '10 min' },
       { title: 'CRUD operations', videoUrl: yt('ofme2o29ngU', 600), duration: '10 min' },
@@ -94,7 +94,7 @@ const courses = [
     category: 'Programming',
     level: 'Beginner',
     instructor: 'Mike Dane & Mosh Hamedani',
-    imageUrl: img('learnhub-python'),
+    imageUrl: img('python'),
     lessons: [
       { title: 'Python basics', videoUrl: yt('rfscVS0vtbw'), duration: '30 min' },
       { title: 'Functions and loops', videoUrl: yt('rfscVS0vtbw', 5400), duration: '35 min' },
@@ -108,7 +108,7 @@ const courses = [
     category: 'Web Development',
     level: 'Beginner',
     instructor: 'Dave Gray',
-    imageUrl: img('learnhub-css'),
+    imageUrl: img('css'),
     lessons: [
       { title: 'Selectors and colors', videoUrl: yt('OXGznpKZ_sA'), duration: '25 min' },
       { title: 'The box model', videoUrl: yt('OXGznpKZ_sA', 7200), duration: '30 min' },
@@ -122,7 +122,7 @@ const courses = [
     category: 'Tools',
     level: 'Beginner',
     instructor: 'Gwen Faraday',
-    imageUrl: img('learnhub-git'),
+    imageUrl: img('git'),
     lessons: [
       { title: 'What is Git?', videoUrl: yt('RGOj5yH7evk'), duration: '10 min' },
       { title: 'Commits and pushing to GitHub', videoUrl: yt('RGOj5yH7evk', 1200), duration: '20 min' },
@@ -136,7 +136,7 @@ const courses = [
     category: 'Web Development',
     level: 'Intermediate',
     instructor: 'Brad Traversy',
-    imageUrl: img('learnhub-express'),
+    imageUrl: img('express'),
     lessons: [
       { title: 'Setting up Express', videoUrl: yt('L72fhGm1tfE'), duration: '15 min' },
       { title: 'Routing and middleware', videoUrl: yt('L72fhGm1tfE', 1500), duration: '25 min' },

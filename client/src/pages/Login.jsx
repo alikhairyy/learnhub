@@ -31,7 +31,7 @@ export default function Login() {
   return (
     <div className="auth-page">
       <div className="auth-side">
-        <img src="https://picsum.photos/seed/learnhub-login/600/800" alt="" />
+        <img src="/images/login.svg" alt="" />
         <div className="auth-side-text">
           <h2>Welcome back!</h2>
           <p>Pick up your courses right where you left off.</p>

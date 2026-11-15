@@ -208,4 +208,4 @@ Built by a team of four students.
 A full browser smoke test (49 checks across every feature) was run against the app. See [`TEST_REPORT.md`](TEST_REPORT.md).
 
 ## Credits
-Sample lesson videos are public YouTube tutorials by freeCodeCamp, Programming with Mosh, Web Dev Simplified, Dave Gray and Traversy Media, embedded for demonstration. Placeholder images come from picsum.photos.
+Sample lesson videos are public YouTube tutorials by freeCodeCamp, Programming with Mosh, Web Dev Simplified, Dave Gray and Traversy Media, embedded for demonstration. Course covers and page illustrations are bundled SVGs in `client/public/images/`, so they load without internet access.

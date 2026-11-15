@@ -57,7 +57,7 @@ export default function MyCourses() {
 
       {items.length === 0 ? (
         <div className="empty">
-          <img src="https://picsum.photos/seed/learnhub-empty/400/240" alt="" />
+          <img src="/images/empty.svg" alt="" />
           <p>You haven't enrolled in any courses yet.</p>
           <Link to="/courses" className="btn btn-accent">
             Browse courses

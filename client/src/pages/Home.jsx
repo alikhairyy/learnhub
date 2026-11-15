@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <img src="https://picsum.photos/seed/learnhub-hero/720/540" alt="Students learning online" />
+            <img src="/images/hero.svg" alt="Students learning online" />
           </div>
         </div>
       </section>

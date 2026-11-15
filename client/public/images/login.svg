@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#1E1B4B"/></linearGradient></defs>
+<rect width="600" height="800" fill="url(#g)"/>
+<circle cx="520" cy="110" r="190" fill="#ffffff" opacity="0.08"/>
+<circle cx="70" cy="720" r="170" fill="#ffffff" opacity="0.07"/>
+<rect x="150" y="230" width="300" height="190" rx="18" fill="#ffffff" opacity="0.14"/>
+<circle cx="300" cy="325" r="44" fill="#14B8A6"/>
+<path d="M286 302 L286 348 L324 325 Z" fill="#ffffff"/>
+<text x="300" y="530" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">Welcome back</text>
+<text x="300" y="580" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="24" fill="#E0E7FF">Pick up where you left off</text>
+</svg>
