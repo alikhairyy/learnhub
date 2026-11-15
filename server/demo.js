@@ -4,7 +4,7 @@
  *
  * - starts a temporary in-memory MongoDB (data is wiped when you stop it)
  * - seeds the demo users and courses
- * - builds the React client if needed
+ * - builds the React client
  * - serves API + website together on http://localhost:5000
  */
 const path = require('path');
@@ -23,12 +23,10 @@ function run(cmd, args, cwd, env = process.env) {
 }
 
 async function main() {
-  // 1. Build the React client once
-  if (!fs.existsSync(path.join(clientDir, 'dist', 'index.html'))) {
-    console.log('Building the React client (first run only)...');
-    if (!fs.existsSync(path.join(clientDir, 'node_modules'))) run('npm', ['install'], clientDir);
-    run('npm', ['run', 'build'], clientDir);
-  }
+  // 1. Build the React client (every run, so code changes always show)
+  console.log('Building the React client...');
+  if (!fs.existsSync(path.join(clientDir, 'node_modules'))) run('npm', ['install'], clientDir);
+  run('npm', ['run', 'build'], clientDir);
 
   // 2. Temporary database
   console.log('Starting in-memory MongoDB (first run downloads it, ~1-2 min)...');
